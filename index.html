@@ -33,9 +33,7 @@
           <blockquote>Cryptography is one of the very few fields where adversarial conflict continues to heavily favor the defender<br>— Vitalik Buterin, <a href="https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51">A Proof of Stake Design Philosophy</a></blockquote>
         </section>
 
-        <section>
-          <blockquote>Social scalability is the ability of an institution to overcome shortcomings in human minds and in the motivating or constraining aspects of said institution that limit who or how many can successfully participate.<br>– Nick Szabo, <a href ='http://unenumerated.blogspot.hr/2017/02/money-blockchains-and-social-scalability.html'>Money, blockchains, and social scalability</a></bmockquote>
-        </section>
+
           
         <section>
           <h3>Important Functions</h3>
@@ -52,22 +50,82 @@
           <ul>
             <li>The Cypherpunks and the Crypto-Anarchists</li>
             <li>HashCash, Bit Gold, and Smart Contracts</li>
-            <li>Satoshi Nakamoto and Bitcoin</li>
-            <li>Wunderkind Vitalik and Ethereum</li>
           </ul>
         </section>
 
         <section>
+          <blockquote>Social scalability is the ability of an institution to overcome shortcomings in human minds and in the motivating or constraining aspects of said institution that limit who or how many can successfully participate.<br>– Nick Szabo, <a href ='http://unenumerated.blogspot.hr/2017/02/money-blockchains-and-social-scalability.html'>Money, blockchains, and social scalability</a></bmockquote>
+        </section>
+
+        <section>
           <h1>Blockchains!</h1>
-          <h3>Social Scalability + Individual Empowerment</h3>
+          <h3>Leveraging Cryptography for Social Scalability</h3>
+        </section>
+
+        <section>
+          <h2>Bitcoin: A psuedoanonymous digital transaction ledger</h2>
+          <small>(AKA magic internet money)</small>
+          <br>
+          <ul>
+            <li>Satoshi Nakamoto</li>
+            <li>No central authority</li>
+            <li>Proof of work</li>
+            <li>Worth like 10 billion dollars</li>
+          </ul>        
         </section>
         
+        <section data-background="img/bitcoin.jpg"  data-background-size="contain">
+	      </section>
+  
+
+        
         <section>
-          <object type="image/svg+xml" data="https://bitcoin.org/img/dev/en-blockchain-overview.svg" style="background: #222">
-          </object>
+          <h2>But..</h2>
+          <ul>
+            <li>Slow</li>
+            <li>Expensive</li>
+            <li>Terrible environmentally</li>
+            <li><i>Just does money</i></li>
+          </ul>
         </section>
-            
-			</div>
+
+        <section>
+          <h2>Enter Wunderkind Vitalik</h2>
+        </section>
+
+        <section data-background="img/ethereum.jpg"  data-background-size="contain">
+	      </section>
+
+        <section>
+          <h3>DApps!</h3>
+          <ul>
+            <li>Arbitray state changes!</li>
+            <li>Smart Contracts</li>
+            <li>Shared protocols!</li>
+            <li>Trust!</li>
+          </ul>
+        </section>
+
+        <section>
+           <pre><code>
+ contract MyToken {
+    mapping (address => uint256) public balanceOf;
+    function MyToken(
+        uint256 initialSupply
+        ) {
+        balanceOf[msg.sender] = initialSupply;              
+    }
+    function transfer(address _to, uint256 _value) {
+        if (balanceOf[msg.sender] < _value) throw;           
+        if (balanceOf[_to] + _value < balanceOf[_to]) throw; 
+        balanceOf[msg.sender] -= _value;                     
+        balanceOf[_to] += _value;                            
+    }}
+  
+          </pre><code>
+        </section>
+           
+    </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
