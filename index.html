@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h2>Cryptography</h2>
+          The study of techniques for secure communication in the presence of adversaries. 
+        </section>
+
+				<section>
+          <blockquote>Cryptography is one of the very few fields where adversarial conflict continues to heavily favor the defender<br>— Vitalik Buterin, <a href="https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51">A Proof of Stake Design Philosophy</a></blockquote>
+        </section>
+
+        <section>
+          <blockquote>Social scalability is the ability of an institution to overcome shortcomings in human minds and in the motivating or constraining aspects of said institution that limit who or how many can successfully participate.<br>– Nick Szabo, <a href ='http://unenumerated.blogspot.hr/2017/02/money-blockchains-and-social-scalability.html'>Money, blockchains, and social scalability</a></bmockquote>
+        </section>
+          
+        <section>
+          <h3>Important Functions</h3>
+          <ul>
+            <li>Hashing</li>
+            <li>Public-Key Cryptography (Elliptic Curve Cryptography)</li>
+            <li>Zero Knowledge Proofs</li>
+            <li>Merkle Trees</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>A History Lesson</h2>
+          <ul>
+            <li>The Cypherpunks and the Crypto-Anarchists</li>
+            <li>HashCash, Bit Gold, and Smart Contracts</li>
+            <li>Satoshi Nakamoto and Bitcoin</li>
+            <li>Wunderkind Vitalik and Ethereum</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Blockchains!</h1>
+          <h3>Social Scalability + Individual Empowerment</h3>
+        </section>
+        
+        <section>
+          <object type="image/svg+xml" data="https://bitcoin.org/img/dev/en-blockchain-overview.svg" style="background: #222">
+          </object>
+        </section>
+            
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
