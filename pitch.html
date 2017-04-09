@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Fathom Pitch</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h2>Fathom</h2>
+          A protocol to create and assess meaningful credentials through the ocnsensus of knowledge communities. 
+        </section>
+
+        <section>
+          <section>
+            <h2>The Problem</h2>
+            <p>Granular understanding of abilities and skills enables more optimal organization <b>but...</b></p>
+            <br>
+            <p>An insitutional trust model for credentials cannot scale to provide these credentials</p>
+          </section>
+          <section>
+            <h2>The Solution</h2>
+            <p>A decentralized network based system of credentials</p>
+          </section>
+        </section>
+        
+        <section>
+          <h2>How does it Work</h2>
+          <section>
+            <h3>Communities are built around <u>credentials</u></h3>
+            <ul>
+              <li>They can define any arbitrary rules, definitions, or meanings</li>
+              <li>They are a subset of parent communities</li>
+              <li>They have children communities</li>
+            </ul>
+            &#8595;
+          </section>
+          <section>
+            <h3>Users pay tokens to communities to get assessed</h3>
+            <ul>
+              <li>They pay per assessor</li>
+            </ul>
+            <br>&#8595;
+            <h3>Pool of assessors are called</h3>
+            <ul>
+              <li>Assessors can accept by staking tokens</li>
+            </ul>
+            <br>&#8595;
+          </section>
+          <section>
+            <h3>The assessment process</h3>
+            <ul>
+              <li>Each assessor individually assesses</li>
+              <li>They commit-reveal their scores</li>
+              <li>Majority rewarded, minority punished</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Outcomes</h3>
+            <ul>
+              <li>Assessee joins community if they pass</li>
+              <li>Nothing if they fail</li>
+              <li>Assessment contributes to community definition</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Users</h2>
+          <section>
+            <h3>Credential Consumers</h3>
+            <p>Employers, Institutions, Social Groups, Firms</p><br>
+            <p>Those who need to organize individuals based on abilities</p>
+          </section>
+          <section>
+            <h3>Credential Producers</h3>
+            <p>Schools, in-job training, learning groups, MOOCS</p><br>
+            <p>Experiences to be captured</p>
+          </section>
+          <section>
+            <h3>Credential Earners</h3>
+            <p>The ones moving throughout this ecosystem</p>
+				  </section>
+        </section>
+
+      </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
