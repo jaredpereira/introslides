@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h2>Cryptography</h2>
+          The study of techniques for secure communication in the presence of adversaries. 
+        </section>
+
+				<section>
+          <blockquote>Cryptography is one of the very few fields where adversarial conflict continues to heavily favor the defender<br>— Vitalik Buterin, <a href="https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51">A Proof of Stake Design Philosophy</a></blockquote>
+        </section>
+
+
+          
+        <section>
+          <h3>Important Functions</h3>
+          <ul>
+            <li>Hashing</li>
+            <li>Public-Key Cryptography (Elliptic Curve Cryptography)</li>
+            <li>Zero Knowledge Proofs</li>
+            <li>Merkle Trees</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>A History Lesson</h2>
+          <ul>
+            <li>The Cypherpunks and the Crypto-Anarchists</li>
+            <li>Weapons classification and backdoors</li>
+            <li>HashCash, Bit Gold, and Smart Contracts</li>
+          </ul>
+        </section>
+
+        <section>
+          <blockquote>Social scalability is the ability of an institution to overcome shortcomings in human minds and in the motivating or constraining aspects of said institution that limit who or how many can successfully participate.<br>– Nick Szabo, <a href ='http://unenumerated.blogspot.hr/2017/02/money-blockchains-and-social-scalability.html'>Money, blockchains, and social scalability</a></blockquote>
+        </section>
+
+        <section>
+          <h1>Blockchains!</h1>
+          <h3>Leveraging Cryptography for Social Scalability</h3>
+        </section>
+
+        <section>
+          <h2>Bitcoin: A psuedoanonymous digital transaction ledger</h2>
+          <small>(AKA magic internet money)</small>
+          <br>
+          <ul>
+            <li>Satoshi Nakamoto</li>
+            <li>No central authority</li>
+            <li>Proof of work</li>
+            <li>Worth like 10 billion dollars</li>
+          </ul>        
+        </section>
+        
+        <section data-background="img/bitcoin.jpg"  data-background-size="contain">
+	      </section>
+
+        <section>
+          <h2>Mining</h2>
+          <ul>
+            <li>A validation based election</li>
+            <li>Block rewards: incentivizing rule following</li>
+          </ul>
+        </section> 
+
+        
+        <section>
+          <h2>But..</h2>
+          <ul>
+            <li>Slow</li>
+            <li>Expensive</li>
+            <li>Terrible environmentally</li>
+            <li><i>Just does money</i></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Enter Wunderkind Vitalik</h2>
+        </section>
+
+        <section data-background="img/ethereum.jpg"  data-background-size="contain">
+	      </section>
+        
+        <section>
+          <h3>Ethereum does everything</h3>
+          <ul>
+            <li>Built in Virtual Machine as powerful as a 2001 phone</li>
+            <li>Proof of Stake</li>
+            <li>Sharding</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>DApps!</h2>
+          <ul>
+            <li>Arbitrary state changes!</li>
+            <li>Smart Contracts!</li>
+            <li>Shared protocols!</li>
+            <li>Trust!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>DApps: Decentralized Apps for Universal Infrastructure</h3>
+          <ul>
+            <li>Shared data and the rules for governing it</li>
+            <li><i>Smart</i> Contracts (but really so much more)</li>
+            <li>Social, social, social</li>
+            <li>Reduce the transactional cost of everything, for everyone</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Accessible Cryptoeconomics</h3>
+          <ul>
+            <li>Make rules explicit</li>
+            <li>All in one place </li>
+            <li>Extensible, hackable, playable, by default</li>
+          </ul>
+        </section>
+
+        <section>
+           <pre><code>
+ contract MyToken {
+    mapping (address => uint256) public balanceOf;
+    function MyToken(
+        uint256 initialSupply
+        ) {
+        balanceOf[msg.sender] = initialSupply;              
+    }
+    function transfer(address _to, uint256 _value) {
+        if (balanceOf[msg.sender] < _value) throw;           
+        if (balanceOf[_to] + _value < balanceOf[_to]) throw; 
+        balanceOf[msg.sender] -= _value;                     
+        balanceOf[_to] += _value;                            
+    }}
+  
+          </pre></code>
+        </section>
+           
+    </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
