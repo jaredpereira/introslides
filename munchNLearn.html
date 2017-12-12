@@ -39,7 +39,12 @@
                     <hr>
                     <h4>Bootstrapping Plans</h4>
                 </section>
-            </section> 
+
+                <section>
+                    <h2>A demo!</h2>
+                    <p>And we need volunteers!</p>
+                </section>
+            </section>
 
             <section>
                 <section>
@@ -52,9 +57,22 @@
                 </section>
 
                 <section>
+                    <h3>Fathom isn't</h3>
+                    <p>an arbitrary credentialing standard</p>
+                    <small>e.g BlockCerts, EthCerts, OpenBadges</small>
+                </section>
+
+                <section>
+                    <h3>Credential integrity is not credential vailidity</h3>
+                    <p>If credential consumers need to validate credentials they will gravitate towards the easiest way they can</p>
+                    <p>In an institutional model this is a centralized institution</p>
+                </section>
+
+                <section>
                     <h3>Why</h3>
                     <p>Everyone should be free to <u>build their identity</u> however they want, and <u>communicate it to others.</u></p>
                 </section>
+
             </section>
 
             <section>
@@ -78,7 +96,7 @@
                         <li><b>June 2015:</b> Pivoted to assessment system </li>
                         <li><b>Jan 2016:</b> Coded first smart-contracts </li>
                         <li><b>October 2016:</b> Joined ConsenSys </li>
-                        <li>New teammates joined, <b>June and October 2017</b></li>
+                        <li>Julius and Michiya joined, <b>June and October 2017</b></li>
                     </ul>
                 </section>
             </section>
@@ -112,23 +130,38 @@
                 </section>
 
                 <section>
+                    <img src="img/sampleConceptTree.png" class="scale">
+                </section>
+
+                <section>
                     <h3>The Assessment Process</h3>
                     <p>A sample of current members assess potential new ones with a staked schelling game</p>
                     <p>Assessee and assessors have to pay/stake with AHA (aha!) tokens</p>
                 </section>
 
                 <section>
-                    <h3>WHat does this give us?</h3>
-                    <p>A decentralized <i>scalable</i> mechanism for creating credentials that:</p>
+                    <img src="img/concept.png" class="scale">
+                </section>
+
+                <section>
+                    <h3>How do we get meaning from the crowd?</h3>
+                    <p>Assessors' inputs are weighed against each other.</p>
+                    <p>A majority in consensus gets rewarded</p>
+                    <p>Those not in consensus get punished</p>
+                </section>
+
+                <section>
+                    <h3>What does this give us?</h3>
+                    <p>A decentralized <i>scalable</i> mechanism for creating credentials that are:</p>
                     <ul>
-                        <li>Are directly tied to the consensus of the communities around them</li>
-                        <li>Are inherently participatory, not exclusionary</li>
-                        <li>Are scalable and secure</li>
+                        <li>directly tied to the consensus of the communities around them</li>
+                        <li>inherently participatory, not exclusionary</li>
+                        <li>scalable and secure</li>
                     </ul>
                 </section>
 
                 <section>
-                    <p>We can use these to build independant communities, systems, and structures, that can anchor trust to a single source</p>
+                    <p>We can use these to build independant communities, systems, and structures, that can anchor identity attributes to a single source</p>
                 </section>
             </section>
 
@@ -161,9 +194,71 @@
                 </section>
 
                 <section>
-                    <h3>Let's have some examples</h3><
+                    <h3>Let's have some examples</h3>
                 </section>
 
+                <section>
+                    <pre>
+                        <code>
+contract UniversalRoom {
+   function getPermissions(address) constant returns (bytes32) {
+      return (0x1);
+   }
+}
+
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <pre>
+                        <code>
+import 'Token.sol'
+contract TokenRooms {
+    string public metadata = "Qm...";
+
+    function getPermissions(address user, address _token,
+                            uint _threshold) 
+                            constant public returns(bytes32){
+        if(Token(_token).balanceOf(user) >= _threshold) {
+            return (0x1);
+        } else {
+            return (0x0);
+        }
+    }
+}
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <pre>
+                        <code>
+{
+    "name": "Meta Token Room",
+    "description": "You need {{_threshold}} tokens from {{_token}}",
+    "abi": [...],
+    "contracts":
+    [{
+        "name": "token",
+        "address": "{{_token}}",
+        "abi": [...]
+    }]
+}
+                        </code>
+                    </pre>
+                </section>
+
+                <section>
+                    <h3>Building flexible tools</h3>
+                    <p>We encourage unknowns and need to be prepared for them</p>
+                    <p>We need simple things that compose well</p>
+                </section>
+
+                <section>
+                    <h3>A blockchain IDE</h3>
+                    <p>You have to be integrated with the social experience</p>
+                </section>
             </section>
 
             <section>
@@ -175,6 +270,78 @@
                 <section>
                     <h3>A full circle back to learning</h3>
                     <p>Learning both creates credentials and depends on them.</p>
+                </section>
+
+                <section>
+                    <h3>We're learning:</h3>
+                    <p>Whether fathom works</p>
+                    <p>What we can build with fathom</p>
+                    <p>How to build a sustainable network</p>
+                </section>
+
+                <section>
+                    <h3>We want people to learn:</h3>
+                    <p>How to use fathom</p>
+                    <small>Concepts, assessments, communities</small>
+                    <p>How to build things on fathom</p>
+                    <small>Dapps!</small>
+                    <p>Protocol Literacy</p>
+                </section>
+
+                <section>
+                    <h3>The Fathom Playground</h3>
+                    <h4>An online self-directed learning program around decentralized technology</h4>
+                </section>
+
+                <section>
+                    <h3>Participants:</h3>
+                    <p>Set their own goals</p>
+                    <p>Interact with others to meet them</p>
+                    <p>Create their own strucutres</p>
+                    <p>Collectively define the credentials they earn</p>
+                    <p>Select new peers</p>
+                </section>
+
+                <section>
+                    <h3>We are just the first participants</h3>
+                </section>
+
+                <section>
+                    <h3>The seed for the network</h3>
+                    <p>We need a diverse set of experiences</p>
+                    <p>We want to run this multiple times</p>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>What we're doing</h2>
+                </section>
+
+                <section>
+                    <h3>Building out the chatrooms</h3>
+                    <p>cleaning up</p>
+                    <p>Intuitive modularity</p>
+                </section>
+
+                <section>
+                    <h3>Running up to the playground</h3>
+                    <p>Getting the word out</p>
+                    <p>Figuring out funding/incentives</p>
+                    <p>Getting learners involved</p>
+                </section>
+
+                <section>
+                    <h2>What we need from you</h2>
+                </section>
+
+                <section>
+                    <p>Help finding learners</p>
+                    <p>Help tearing our stuff apart</p>
+                </section>
+
+                <section>
+                    <h3>QnA?</h3>
                 </section>
             </section>
 
