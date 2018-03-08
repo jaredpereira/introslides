@@ -1,0 +1,250 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+          <section>
+              <h1>EVM Constructionism</h1>
+              <h3>The Mathetic Opportunty in Distributed Computing</h3>
+          </section>
+
+          <section>
+              <section>
+                  <h2>Imagine all this works</h2>
+              </section>
+
+              <section>
+                  <h3>Society runs on the software you are building</h3>
+              </section>
+
+              <section>
+                  <h3><i>Kids</i> are using decentralized technologies </h3>
+              </section>
+
+              <section>
+                  <h2>How does this change their minds?</h2>
+              </section>
+
+              <section>
+                  <h2>We need to care about how the software we build changes how people think</h2>
+              </section>
+          </section>
+
+          <section>
+              <h1>Disclaimers</h1>
+
+              <h3>I am not an educator</h3>
+              <h3>I don't have many answers</h3>
+              <h3>This talk is messy</h3>
+              <h3>When I use "we" I mean it in a general community sense that may not completely vibe with you</h3>
+          </section>
+
+          <section>
+              <h1>Learning</h1>
+          </section>
+
+          <section>
+              <section>
+                  <h2>Constructi<b>vism</b></h2>
+                  <h3>A theory of knowledge</h3>
+              </section>
+
+              <section>
+                  <p>Knowledge is constructed in an individual based on the interaction between their <b>experiences</b> and <b>ideas</b></p>
+              </section>
+
+              <section>
+                  <p>Stemming from <b>Jean Piaget</b></p>
+                  <p>Drawing from a <b>genetic epistomology</b> perspective</p>
+              </section>
+
+              <section>
+                  <p>Focused on assimilation and accomodation</p>
+              </section>
+          </section>
+
+          <section>
+              <section>
+                  <h2>Constructi<b>onism</b></h2>
+                  <h3>A learning theory</h3>
+              </section>
+
+              <section>
+                  <p>Weakly: Learning by doing</p>
+                  <p>Strongly: Learning by creating meaningful artifcats</p>
+              </section>
+
+              <section>
+                  <p>Championed by <b>Seymour Papert</b></p>
+                  <p>Recasts Piaget as an epistemologist not pediatric psychologist</p>
+              </section>
+
+              <section>
+                  <p>The materials with which knowledge is constructed is sourced from one's environment</p>
+              </section>
+
+              <section>
+                  <h3>The Important Part</h3>
+                  <p><b>Computers</b> can be carriers for meta-mathetic ideas</p>
+              </section>
+
+              <section>
+                  <h3>The Other Important Part</h3>
+                  <blockquote>
+                      The seperation between the learning process and what is learned is a
+                      mistake. To understand how a child learns numbers we have
+                      to study number. And we have to study number in a
+                      particular way: We have to study the structure of number,
+                      a mathematically serious undertaking.
+                  </blockquote>
+              </section>
+          </section>
+
+          <section>
+              <section>
+                  <h2>What happened?</h2>
+              </section>
+
+              <section>
+                  <p>Logo was really really cool</p>
+                  <p>Smalltalk influenced academic comp-sci</p>
+                  <p>Bootcamps!</p>
+              </section>
+
+              <section>
+                  <h3>Things could probably have gone better</h3>
+                  <p>There still isn't a broad change in education nor widespread computational literacy</p>
+              </section>
+          </section>
+
+          <section>
+              <section>
+                  <h1>Distributed Cryptosystems</h1>
+                  <h3>Using cryptography (and computation) socially</h3>
+              </section>
+
+              <section>
+                  <h3>Examples</h3>
+                  <p>Ethereum</p>
+                  <p>Git</p>
+                  <p>SSB</p>
+              </section>
+
+              <section>
+                  <h3>How things change</h3>
+                  <p>Unprecedented pervasiveness</p>
+                  <p>+</p>
+                  <p>New <b>social</b> metaphors (i.e forking, consensus, merge conflicts, merkletrees, web of trust)</p>
+              </section>
+
+              <section>
+                  <h3>+ the opportunity for a do-over</h3>
+                  <p>We're build new foundations. What if we do so with learning in mind?</p>
+              </section>
+          </section>
+
+          <section>
+              <section>
+                  <h2>Opportunities</h2>
+                  <p>the part with lots of little ideas</p>
+              </section>
+
+              <section>
+                  <p>We can build tools <b>for</b> learning</p>
+                  <p>All tools can have learning oriented features</p>
+                  <p>Learning can be a way to build tools</p>
+              </section>
+
+              <section>
+                  <h3>Tools for learning</h3>
+                  <p>Fathom!</p>
+                  <p>Prediction market esque systems</p>
+              </section>
+
+              <section>
+                  <h3>Things we should have in tools</h3>
+                  <p>View Source! (ex: web browser)</p>
+                  <p>Simulations/Forking/Sandboxes (like http://ncase.me/trust/) </p>
+                  <p>Security like signals for long-term benefits (i.e a SSL lock but for Open-source-ness)</p>
+              </section>
+
+              <section>
+                  <h3>Learning to build</h3>
+                  <p>Systems for development and research that respect learning</p>
+              </section>
+          </section>
+
+          <section>
+              <section>
+                  <h2>Closing thoughts</h2>
+              </section>
+
+              <section>
+                  <p>The benefits can be reaped today</p>
+              </section>
+
+              <section>
+                  <p>Hiding the novelty of what we're doing is not optimal</p>
+              </section>
+
+              <section>
+                  <p>The distributed school of the future looks like what we're doing</p>
+              </section>
+
+              <section>
+                  <p>We're doing pretty good</p>
+                  <p>Openness, collaboration, funding</p>
+              </section>
+
+              <section>
+                  <p>We need to foster a culture that respects learning as a fundamental part of progress</p>
+              </section>
+          </section>
+
+          <section>
+              <h3>Me</h3>
+              <p>jared.pereira@consensys.net</p>
+              <a href="https://fathom.network">fathom.network</a>
+          </section>
+      </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
